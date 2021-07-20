@@ -1,0 +1,16 @@
+kitech_robot:
+    joint_state_controller:
+      type: joint_state_controller/JointStateController
+      publish_rate: 50
+    
+
+    mp_left_wheel_joint_controller:
+        type: effort_controllers/JointPositionController
+        joint: mp_left_wheel_joint
+        pid: {p: 100.0, i: 0.01, d: 10.0}
+        
+        
+    mp_right_wheel_joint_controller:
+        type: effort_controllers/JointPositionController
+        joint: mp_right_wheel_joint
+        pid: {p: 100.0, i: 0.01, d: 10.0}  

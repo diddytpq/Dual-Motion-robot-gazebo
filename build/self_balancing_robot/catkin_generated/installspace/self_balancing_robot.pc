@@ -1,0 +1,8 @@
+prefix=/home/yoseph/ros/dual_motion/install
+
+Name: self_balancing_robot
+Description: Description of self_balancing_robot
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
