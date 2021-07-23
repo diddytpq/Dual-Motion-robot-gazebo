@@ -1,8 +1,8 @@
-# Install script for directory: /home/yoseph/ros/dual_motion/src/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_robots/kitech_robots_control
+# Install script for directory: /home/yoseph/ros/Dual-Motion-robot-gazebo/src/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_robots/kitech_robots_control
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/yoseph/ros/dual_motion/install")
+  set(CMAKE_INSTALL_PREFIX "/home/yoseph/ros/Dual-Motion-robot-gazebo/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

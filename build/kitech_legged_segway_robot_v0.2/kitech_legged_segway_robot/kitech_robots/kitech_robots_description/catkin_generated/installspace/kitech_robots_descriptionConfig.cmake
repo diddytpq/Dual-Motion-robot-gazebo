@@ -67,14 +67,14 @@ set(kitech_robots_description_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(kitech_robots_description_SOURCE_PREFIX /home/yoseph/ros/dual_motion/src/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_robots/kitech_robots_description)
-  set(kitech_robots_description_DEVEL_PREFIX /home/yoseph/ros/dual_motion/devel)
+  set(kitech_robots_description_SOURCE_PREFIX /home/yoseph/ros/Dual-Motion-robot-gazebo/src/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_robots/kitech_robots_description)
+  set(kitech_robots_description_DEVEL_PREFIX /home/yoseph/ros/Dual-Motion-robot-gazebo/devel)
   set(kitech_robots_description_INSTALL_PREFIX "")
   set(kitech_robots_description_PREFIX ${kitech_robots_description_DEVEL_PREFIX})
 else()
   set(kitech_robots_description_SOURCE_PREFIX "")
   set(kitech_robots_description_DEVEL_PREFIX "")
-  set(kitech_robots_description_INSTALL_PREFIX /home/yoseph/ros/dual_motion/install)
+  set(kitech_robots_description_INSTALL_PREFIX /home/yoseph/ros/Dual-Motion-robot-gazebo/install)
   set(kitech_robots_description_PREFIX ${kitech_robots_description_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/yoseph/ros/dual_motion/install/lib;/home/yoseph/ros/dual_motion/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/yoseph/ros/Dual-Motion-robot-gazebo/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

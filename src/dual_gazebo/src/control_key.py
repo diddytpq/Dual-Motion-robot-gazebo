@@ -96,13 +96,15 @@ def move_mecanum(data):
     # start publisher of cmd_vel to control mecanum
 
 
-    pub = rospy.Publisher("/cmd_vel", Twist, queue_size=10)
+    pub_L = rospy.Publisher('/dual_motion_robot/wheel_L_joint_joint_controller/command', Float64, queue_size=10)
+    pub_R = rospy.Publisher('/dual_motion_robot/wheel_R_joint_joint_controller/command', Float64, queue_size=10)
+
     
     """pub = rospy.Publisher("/mecanum_1_vel", Twist, queue_size=10)
     pub_wheel_vel_1 = rospy.Publisher("/mecanum_1/wheel_1/command", Float64, queue_size=10)
     pub_wheel_vel_2 = rospy.Publisher("/mecanum_1/wheel_2/command", Float64, queue_size=10)
     pub_wheel_vel_3 = rospy.Publisher("/mecanum_1/wheel_3/command", Float64, queue_size=10)
-    pub_wheel_vel_4 = rospy.Publisher("/mecanum_1/wheel_4/command", Float64, queue_size=10)"""
+    pub_wheel_vel_4 = rospy.Publisher("/mecanum_1/wheel_4/command", Float64, queue_size=10)
     
     linear = data[0]
     angular = data[1]
@@ -138,7 +140,11 @@ def move_mecanum(data):
     #rospy.loginfo("twist.linear.x: %f; twist.linear.y: %f ; angular %f", twist.linear.x, twist.linear.y, twist.angular.z)
 
     # publish cmd_vel move command to mecanum 
-    pub.publish(twist)
+    #pub.publish(twist)"""
+    data = data[0][0]
+    print(data)
+    pub_L.publish(data)
+    pub_R.publish(data)
 
 
     return [linear[0],linear[1],linear[2]], angular[2]

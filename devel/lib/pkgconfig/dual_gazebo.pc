@@ -1,4 +1,4 @@
-prefix=/home/yoseph/ros/dual_motion/devel
+prefix=/home/yoseph/ros/Dual-Motion-robot-gazebo/devel
 
 Name: dual_gazebo
 Description: Description of dual_gazebo

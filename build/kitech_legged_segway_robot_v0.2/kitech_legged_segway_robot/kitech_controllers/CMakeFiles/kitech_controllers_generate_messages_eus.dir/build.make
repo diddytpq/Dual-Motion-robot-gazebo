@@ -43,25 +43,25 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yoseph/ros/dual_motion/src
+CMAKE_SOURCE_DIR = /home/yoseph/ros/Dual-Motion-robot-gazebo/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yoseph/ros/dual_motion/build
+CMAKE_BINARY_DIR = /home/yoseph/ros/Dual-Motion-robot-gazebo/build
 
 # Utility rule file for kitech_controllers_generate_messages_eus.
 
 # Include the progress variables for this target.
 include kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers/CMakeFiles/kitech_controllers_generate_messages_eus.dir/progress.make
 
-kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers/CMakeFiles/kitech_controllers_generate_messages_eus: /home/yoseph/ros/dual_motion/devel/share/roseus/ros/kitech_controllers/manifest.l
+kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers/CMakeFiles/kitech_controllers_generate_messages_eus: /home/yoseph/ros/Dual-Motion-robot-gazebo/devel/share/roseus/ros/kitech_controllers/manifest.l
 
 
-/home/yoseph/ros/dual_motion/devel/share/roseus/ros/kitech_controllers/manifest.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yoseph/ros/dual_motion/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp manifest code for kitech_controllers"
-	cd /home/yoseph/ros/dual_motion/build/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/yoseph/ros/dual_motion/devel/share/roseus/ros/kitech_controllers kitech_controllers std_msgs
+/home/yoseph/ros/Dual-Motion-robot-gazebo/devel/share/roseus/ros/kitech_controllers/manifest.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yoseph/ros/Dual-Motion-robot-gazebo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp manifest code for kitech_controllers"
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/yoseph/ros/Dual-Motion-robot-gazebo/devel/share/roseus/ros/kitech_controllers kitech_controllers std_msgs
 
 kitech_controllers_generate_messages_eus: kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers/CMakeFiles/kitech_controllers_generate_messages_eus
-kitech_controllers_generate_messages_eus: /home/yoseph/ros/dual_motion/devel/share/roseus/ros/kitech_controllers/manifest.l
+kitech_controllers_generate_messages_eus: /home/yoseph/ros/Dual-Motion-robot-gazebo/devel/share/roseus/ros/kitech_controllers/manifest.l
 kitech_controllers_generate_messages_eus: kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers/CMakeFiles/kitech_controllers_generate_messages_eus.dir/build.make
 
 .PHONY : kitech_controllers_generate_messages_eus
@@ -72,10 +72,10 @@ kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers/CM
 .PHONY : kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers/CMakeFiles/kitech_controllers_generate_messages_eus.dir/build
 
 kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers/CMakeFiles/kitech_controllers_generate_messages_eus.dir/clean:
-	cd /home/yoseph/ros/dual_motion/build/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers && $(CMAKE_COMMAND) -P CMakeFiles/kitech_controllers_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers && $(CMAKE_COMMAND) -P CMakeFiles/kitech_controllers_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers/CMakeFiles/kitech_controllers_generate_messages_eus.dir/clean
 
 kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers/CMakeFiles/kitech_controllers_generate_messages_eus.dir/depend:
-	cd /home/yoseph/ros/dual_motion/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yoseph/ros/dual_motion/src /home/yoseph/ros/dual_motion/src/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers /home/yoseph/ros/dual_motion/build /home/yoseph/ros/dual_motion/build/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers /home/yoseph/ros/dual_motion/build/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers/CMakeFiles/kitech_controllers_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yoseph/ros/Dual-Motion-robot-gazebo/src /home/yoseph/ros/Dual-Motion-robot-gazebo/src/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers /home/yoseph/ros/Dual-Motion-robot-gazebo/build /home/yoseph/ros/Dual-Motion-robot-gazebo/build/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers /home/yoseph/ros/Dual-Motion-robot-gazebo/build/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers/CMakeFiles/kitech_controllers_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers/CMakeFiles/kitech_controllers_generate_messages_eus.dir/depend
 

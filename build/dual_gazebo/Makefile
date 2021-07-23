@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yoseph/ros/dual_motion/src
+CMAKE_SOURCE_DIR = /home/yoseph/ros/Dual-Motion-robot-gazebo/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yoseph/ros/dual_motion/build
+CMAKE_BINARY_DIR = /home/yoseph/ros/Dual-Motion-robot-gazebo/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/yoseph/ros/dual_motion/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yoseph/ros/dual_motion/build/CMakeFiles /home/yoseph/ros/dual_motion/build/dual_gazebo/CMakeFiles/progress.marks
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yoseph/ros/dual_motion/build/CMakeFiles 0
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yoseph/ros/Dual-Motion-robot-gazebo/build/CMakeFiles /home/yoseph/ros/Dual-Motion-robot-gazebo/build/dual_gazebo/CMakeFiles/progress.marks
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yoseph/ros/Dual-Motion-robot-gazebo/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/clean
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/preinstall
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/preinstall
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/yoseph/ros/dual_motion/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
 .PHONY : dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ tf2_msgs_generate_messages_py: dual_gazebo/CMakeFiles/tf2_msgs_generate_messages
 
 # fast build rule for target.
 tf2_msgs_generate_messages_py/fast:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
 .PHONY : tf2_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
 .PHONY : dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ tf2_msgs_generate_messages_nodejs: dual_gazebo/CMakeFiles/tf2_msgs_generate_mess
 
 # fast build rule for target.
 tf2_msgs_generate_messages_nodejs/fast:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
 .PHONY : tf2_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule
 .PHONY : dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ controller_manager_msgs_generate_messages_cpp: dual_gazebo/CMakeFiles/controller
 
 # fast build rule for target.
 controller_manager_msgs_generate_messages_cpp/fast:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build.make dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build.make dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build
 .PHONY : controller_manager_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/rule:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/rule
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/rule
 .PHONY : dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ controller_manager_msgs_generate_messages_eus: dual_gazebo/CMakeFiles/controller
 
 # fast build rule for target.
 controller_manager_msgs_generate_messages_eus/fast:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build.make dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build.make dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build
 .PHONY : controller_manager_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
 .PHONY : dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ tf2_msgs_generate_messages_lisp: dual_gazebo/CMakeFiles/tf2_msgs_generate_messag
 
 # fast build rule for target.
 tf2_msgs_generate_messages_lisp/fast:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
 .PHONY : tf2_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
 .PHONY : dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ controller_manager_msgs_generate_messages_lisp: dual_gazebo/CMakeFiles/controlle
 
 # fast build rule for target.
 controller_manager_msgs_generate_messages_lisp/fast:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build.make dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build.make dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build
 .PHONY : controller_manager_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
 .PHONY : dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ tf2_msgs_generate_messages_cpp: dual_gazebo/CMakeFiles/tf2_msgs_generate_message
 
 # fast build rule for target.
 tf2_msgs_generate_messages_cpp/fast:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
 .PHONY : tf2_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule
 .PHONY : dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ controller_manager_msgs_generate_messages_nodejs: dual_gazebo/CMakeFiles/control
 
 # fast build rule for target.
 controller_manager_msgs_generate_messages_nodejs/fast:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build.make dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build.make dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build
 .PHONY : controller_manager_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 dual_gazebo/CMakeFiles/actionlib_generate_messages_cpp.dir/rule:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
 .PHONY : dual_gazebo/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ actionlib_generate_messages_cpp: dual_gazebo/CMakeFiles/actionlib_generate_messa
 
 # fast build rule for target.
 actionlib_generate_messages_cpp/fast:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f dual_gazebo/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make dual_gazebo/CMakeFiles/actionlib_generate_messages_cpp.dir/build
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f dual_gazebo/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make dual_gazebo/CMakeFiles/actionlib_generate_messages_cpp.dir/build
 .PHONY : actionlib_generate_messages_cpp/fast
 
 # Convenience name for target.
 dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
 .PHONY : dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ tf2_msgs_generate_messages_eus: dual_gazebo/CMakeFiles/tf2_msgs_generate_message
 
 # fast build rule for target.
 tf2_msgs_generate_messages_eus/fast:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make dual_gazebo/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
 .PHONY : tf2_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule
 .PHONY : dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -329,12 +329,12 @@ controller_manager_msgs_generate_messages_py: dual_gazebo/CMakeFiles/controller_
 
 # fast build rule for target.
 controller_manager_msgs_generate_messages_py/fast:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build.make dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build.make dual_gazebo/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build
 .PHONY : controller_manager_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 dual_gazebo/CMakeFiles/actionlib_generate_messages_eus.dir/rule:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/actionlib_generate_messages_eus.dir/rule
 .PHONY : dual_gazebo/CMakeFiles/actionlib_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -344,12 +344,12 @@ actionlib_generate_messages_eus: dual_gazebo/CMakeFiles/actionlib_generate_messa
 
 # fast build rule for target.
 actionlib_generate_messages_eus/fast:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f dual_gazebo/CMakeFiles/actionlib_generate_messages_eus.dir/build.make dual_gazebo/CMakeFiles/actionlib_generate_messages_eus.dir/build
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f dual_gazebo/CMakeFiles/actionlib_generate_messages_eus.dir/build.make dual_gazebo/CMakeFiles/actionlib_generate_messages_eus.dir/build
 .PHONY : actionlib_generate_messages_eus/fast
 
 # Convenience name for target.
 dual_gazebo/CMakeFiles/actionlib_generate_messages_lisp.dir/rule:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
 .PHONY : dual_gazebo/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -359,12 +359,12 @@ actionlib_generate_messages_lisp: dual_gazebo/CMakeFiles/actionlib_generate_mess
 
 # fast build rule for target.
 actionlib_generate_messages_lisp/fast:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f dual_gazebo/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make dual_gazebo/CMakeFiles/actionlib_generate_messages_lisp.dir/build
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f dual_gazebo/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make dual_gazebo/CMakeFiles/actionlib_generate_messages_lisp.dir/build
 .PHONY : actionlib_generate_messages_lisp/fast
 
 # Convenience name for target.
 dual_gazebo/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
 .PHONY : dual_gazebo/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -374,12 +374,12 @@ actionlib_generate_messages_nodejs: dual_gazebo/CMakeFiles/actionlib_generate_me
 
 # fast build rule for target.
 actionlib_generate_messages_nodejs/fast:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f dual_gazebo/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make dual_gazebo/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f dual_gazebo/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make dual_gazebo/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
 .PHONY : actionlib_generate_messages_nodejs/fast
 
 # Convenience name for target.
 dual_gazebo/CMakeFiles/actionlib_generate_messages_py.dir/rule:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/actionlib_generate_messages_py.dir/rule
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f CMakeFiles/Makefile2 dual_gazebo/CMakeFiles/actionlib_generate_messages_py.dir/rule
 .PHONY : dual_gazebo/CMakeFiles/actionlib_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -389,7 +389,7 @@ actionlib_generate_messages_py: dual_gazebo/CMakeFiles/actionlib_generate_messag
 
 # fast build rule for target.
 actionlib_generate_messages_py/fast:
-	cd /home/yoseph/ros/dual_motion/build && $(MAKE) -f dual_gazebo/CMakeFiles/actionlib_generate_messages_py.dir/build.make dual_gazebo/CMakeFiles/actionlib_generate_messages_py.dir/build
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(MAKE) -f dual_gazebo/CMakeFiles/actionlib_generate_messages_py.dir/build.make dual_gazebo/CMakeFiles/actionlib_generate_messages_py.dir/build
 .PHONY : actionlib_generate_messages_py/fast
 
 # Help Target
@@ -431,6 +431,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/yoseph/ros/dual_motion/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

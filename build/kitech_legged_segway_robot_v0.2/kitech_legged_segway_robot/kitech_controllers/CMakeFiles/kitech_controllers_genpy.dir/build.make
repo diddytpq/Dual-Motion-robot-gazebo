@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yoseph/ros/dual_motion/src
+CMAKE_SOURCE_DIR = /home/yoseph/ros/Dual-Motion-robot-gazebo/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yoseph/ros/dual_motion/build
+CMAKE_BINARY_DIR = /home/yoseph/ros/Dual-Motion-robot-gazebo/build
 
 # Utility rule file for kitech_controllers_genpy.
 
@@ -63,10 +63,10 @@ kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers/CM
 .PHONY : kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers/CMakeFiles/kitech_controllers_genpy.dir/build
 
 kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers/CMakeFiles/kitech_controllers_genpy.dir/clean:
-	cd /home/yoseph/ros/dual_motion/build/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers && $(CMAKE_COMMAND) -P CMakeFiles/kitech_controllers_genpy.dir/cmake_clean.cmake
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers && $(CMAKE_COMMAND) -P CMakeFiles/kitech_controllers_genpy.dir/cmake_clean.cmake
 .PHONY : kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers/CMakeFiles/kitech_controllers_genpy.dir/clean
 
 kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers/CMakeFiles/kitech_controllers_genpy.dir/depend:
-	cd /home/yoseph/ros/dual_motion/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yoseph/ros/dual_motion/src /home/yoseph/ros/dual_motion/src/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers /home/yoseph/ros/dual_motion/build /home/yoseph/ros/dual_motion/build/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers /home/yoseph/ros/dual_motion/build/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers/CMakeFiles/kitech_controllers_genpy.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yoseph/ros/Dual-Motion-robot-gazebo/src /home/yoseph/ros/Dual-Motion-robot-gazebo/src/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers /home/yoseph/ros/Dual-Motion-robot-gazebo/build /home/yoseph/ros/Dual-Motion-robot-gazebo/build/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers /home/yoseph/ros/Dual-Motion-robot-gazebo/build/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers/CMakeFiles/kitech_controllers_genpy.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers/CMakeFiles/kitech_controllers_genpy.dir/depend
 

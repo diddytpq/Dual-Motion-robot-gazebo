@@ -1,4 +1,4 @@
-prefix=/home/yoseph/ros/dual_motion/install
+prefix=/home/yoseph/ros/Dual-Motion-robot-gazebo/install
 
 Name: self_balancing_robot
 Description: Description of self_balancing_robot

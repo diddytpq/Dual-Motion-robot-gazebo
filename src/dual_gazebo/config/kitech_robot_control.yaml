@@ -7,10 +7,10 @@ kitech_robot:
     mp_left_wheel_joint_controller:
         type: effort_controllers/JointPositionController
         joint: mp_left_wheel_joint
-        pid: {p: 100.0, i: 0.01, d: 10.0}
+        pid: {p: 100.0, i: 1.01, d: 10.0}
         
         
     mp_right_wheel_joint_controller:
         type: effort_controllers/JointPositionController
         joint: mp_right_wheel_joint
-        pid: {p: 100.0, i: 0.01, d: 10.0}  
+        pid: {p: 100.0, i: 1.01, d: 10.0}  

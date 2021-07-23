@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/yoseph/ros/dual_motion/devel/setup.sh
+    local-name: /home/yoseph/ros/Dual-Motion-robot-gazebo/devel/setup.sh

@@ -2,7 +2,7 @@
 
   <arg name="x_pos" default="0"/>
   <arg name="y_pos" default="0"/>
-  <arg name="z_pos" default="2"/>
+  <arg name="z_pos" default="4"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="world_name" value="$(find dual_gazebo)/worlds/bayland.world"/>
@@ -15,17 +15,12 @@
 
 
 
+
   <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find robot_description)/urdf/kitech_segway/kitech_segway_stl.xacro'" />
   
   <node name="dual_robot_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
           args="-urdf -param robot_description -model dual_robot -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos)" />
 
-  <!-- Run controller utils -->
-  <rosparam file="$(find dual_gazebo)/config/controller.yaml" command="load"/>
-
-  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
-  output="screen" ns="/dual_motion_robot_controller" args=" chassis_pos_joint   "/>
-                                                
 
 
 

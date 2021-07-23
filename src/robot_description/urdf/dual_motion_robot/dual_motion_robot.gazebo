@@ -3,37 +3,63 @@
   
 
   <gazebo reference="link_left_wheel">
-    <mu1>10.0</mu1>
-    <mu2>10.0</mu2>
-    <material>Gazebo/Gray</material>
+    <mu1>1</mu1>
+    <mu2>1</mu2>
+    <fdir1>1 0 0</fdir1>
+    <kp>1e+13</kp>
+    <kd>1</kd>
+    <maxVel>0</maxVel>
+    <minDepth>0.001</minDepth>
+    <gravity>1</gravity>
+    <material>Gazebo/DarkGrey</material>
   </gazebo>
+
   <gazebo reference="link_right_wheel">
-    <mu1>10.0</mu1>
-    <mu2>10.0</mu2>
-    <material>Gazebo/Gray</material>
+    <mu1>1</mu1>
+    <mu2>1</mu2>
+    <fdir1>1 0 0</fdir1>
+    <kp>1e+13</kp>
+    <kd>1</kd>
+    <maxVel>0</maxVel>
+    <minDepth>0.001</minDepth>
+    <gravity>1</gravity>
+    <material>Gazebo/DarkGrey</material>
   </gazebo>
   
   <gazebo reference="link_chassis">
-      <mu1>10.0</mu1>
-      <mu2>10.0</mu2>
-      <material>Gazebo/White</material>
+    <mu1>1</mu1>
+    <mu2>1</mu2>
+    <fdir1>1 0 0</fdir1>
+    <kp>1e+13</kp>
+    <kd>1</kd>
+    <maxVel>0</maxVel>
+    <minDepth>0.001</minDepth>
+    <gravity>1</gravity>
+    <material>Gazebo/Grey</material>
   </gazebo>
 
   <gazebo reference="wheel_link">
-      <mu1>10.0</mu1>
-      <mu2>10.0</mu2>
-      <material>Gazebo/White</material>
-  </gazebo>
+    <mu1>1</mu1>
+    <mu2>1</mu2>
+    <fdir1>1 0 0</fdir1>
+    <kp>1e+13</kp>
+    <kd>1</kd>
+    <maxVel>0</maxVel>
+    <minDepth>0.001</minDepth>
+    <gravity>1</gravity>
+    <material>Gazebo/Grey</material>
+  </gazebo>ee
 
   <gazebo>
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
       <robotNamespace>/dual_motion_robot</robotNamespace>
+      <controlPeriod>0.001</controlPeriod>
       <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
     </plugin>
   </gazebo>
 
 
-  <gazebo> 
+  <!--gazebo> 
     <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
       <legacyMode>false</legacyMode>
       <alwaysOn>true</alwaysOn>
@@ -49,6 +75,6 @@
       <robotBaseFrame>base_footprint</robotBaseFrame>
 
     </plugin>
-  </gazebo>
+  </gazebo-->
 
 </robot>

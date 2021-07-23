@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/yoseph/ros/dual_motion/src
-# Build directory: /home/yoseph/ros/dual_motion/build
+# Source directory: /home/yoseph/ros/Dual-Motion-robot-gazebo/src
+# Build directory: /home/yoseph/ros/Dual-Motion-robot-gazebo/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

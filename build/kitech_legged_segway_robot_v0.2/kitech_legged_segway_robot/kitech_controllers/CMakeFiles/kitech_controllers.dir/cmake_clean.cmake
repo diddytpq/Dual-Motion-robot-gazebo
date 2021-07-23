@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/yoseph/ros/dual_motion/devel/lib/libkitech_controllers.pdb"
-  "/home/yoseph/ros/dual_motion/devel/lib/libkitech_controllers.so"
+  "/home/yoseph/ros/Dual-Motion-robot-gazebo/devel/lib/libkitech_controllers.pdb"
+  "/home/yoseph/ros/Dual-Motion-robot-gazebo/devel/lib/libkitech_controllers.so"
   "CMakeFiles/kitech_controllers.dir/src/body_cmd_joy.cpp.o"
   "CMakeFiles/kitech_controllers.dir/src/leg_controllers/leg_controller.cpp.o"
   "CMakeFiles/kitech_controllers.dir/src/leg_controllers/leg_desired.cpp.o"

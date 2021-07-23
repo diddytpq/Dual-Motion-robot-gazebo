@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 
 <robot name="kitech_segway_type" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find robot_description)/urdf/kitech_segway/materials.xacro" />
 
   <xacro:property name="deg_to_rad" value="0.01745329251994329577"/>
 
@@ -60,14 +61,14 @@
 
     <collision>
       <geometry>
-	      <box size="2.2 0.7 0.8"/>
+	      <box size="2.2 0.7 0.2"/>
       </geometry>
       <origin rpy="${90.*M_PI/180.} 0 0" xyz="0 0 0.45"/>
     </collision>
 
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <mass value="10"/>
+      <mass value="20"/>
       <inertia ixx="2.2124416e-03" ixy="-1.2294101e-05" ixz="3.4938785e-05"
                iyy="2.1193702e-03" iyz="-5.0120904e-06"
                izz="2.0064271e-03" />
@@ -77,7 +78,7 @@
 
   <gazebo reference="base_link">
     <turnGravityOff>false</turnGravityOff>
-    <material>Gazebo/Gray</material>
+    <material>Gazebo/Darkgreen</material>
   </gazebo>
 
   <link name="mp_left_wheel">
@@ -98,7 +99,7 @@
 
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <mass value="10"/>
+      <mass value="5"/>
       <inertia ixx="2.2124416e-03" ixy="-1.2294101e-05" ixz="3.4938785e-05"
                iyy="2.1193702e-03" iyz="-5.0120904e-06"
                izz="2.0064271e-03" />
@@ -107,7 +108,7 @@
 
   <gazebo reference="mp_left_wheel">
     <turnGravityOff>false</turnGravityOff>
-    <material>Gazebo/Black</material>
+    <material>Gazebo/DarkGrey</material>
 
   </gazebo>
 
@@ -135,7 +136,7 @@
 
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <mass value="10"/>
+      <mass value="5"/>
       <inertia ixx="2.2124416e-03" ixy="-1.2294101e-05" ixz="3.4938785e-05"
                iyy="2.1193702e-03" iyz="-5.0120904e-06"
                izz="2.0064271e-03" />
@@ -145,7 +146,7 @@
 
   <gazebo reference="mp_right_wheel">
     <turnGravityOff>false</turnGravityOff>
-    <material>Gazebo/Black</material>
+    <material>Gazebo/DarkGrey</material>
   </gazebo>
 
   <joint name="mp_right_wheel_joint" type="continuous">

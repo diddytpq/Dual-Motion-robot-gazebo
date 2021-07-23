@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/yoseph/ros/dual_motion/devel/share/roseus/ros/kitech_controllers/manifest.l"
+  "/home/yoseph/ros/Dual-Motion-robot-gazebo/devel/share/roseus/ros/kitech_controllers/manifest.l"
   "CMakeFiles/kitech_controllers_generate_messages_eus"
 )
 
