@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yoseph/ros/Dual-Motion-robot-gazebo/src
+CMAKE_SOURCE_DIR = /home/drcl_yang/ros/Dual-Motion-robot-gazebo/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yoseph/ros/Dual-Motion-robot-gazebo/build
+CMAKE_BINARY_DIR = /home/drcl_yang/ros/Dual-Motion-robot-gazebo/build
 
 # Utility rule file for _catkin_empty_exported_target.
 
@@ -63,10 +63,10 @@ kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_robots/kitech_
 .PHONY : kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_robots/kitech_robots_control/CMakeFiles/_catkin_empty_exported_target.dir/build
 
 kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_robots/kitech_robots_control/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_robots/kitech_robots_control && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
+	cd /home/drcl_yang/ros/Dual-Motion-robot-gazebo/build/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_robots/kitech_robots_control && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
 .PHONY : kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_robots/kitech_robots_control/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_robots/kitech_robots_control/CMakeFiles/_catkin_empty_exported_target.dir/depend:
-	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yoseph/ros/Dual-Motion-robot-gazebo/src /home/yoseph/ros/Dual-Motion-robot-gazebo/src/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_robots/kitech_robots_control /home/yoseph/ros/Dual-Motion-robot-gazebo/build /home/yoseph/ros/Dual-Motion-robot-gazebo/build/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_robots/kitech_robots_control /home/yoseph/ros/Dual-Motion-robot-gazebo/build/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_robots/kitech_robots_control/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/drcl_yang/ros/Dual-Motion-robot-gazebo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/drcl_yang/ros/Dual-Motion-robot-gazebo/src /home/drcl_yang/ros/Dual-Motion-robot-gazebo/src/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_robots/kitech_robots_control /home/drcl_yang/ros/Dual-Motion-robot-gazebo/build /home/drcl_yang/ros/Dual-Motion-robot-gazebo/build/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_robots/kitech_robots_control /home/drcl_yang/ros/Dual-Motion-robot-gazebo/build/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_robots/kitech_robots_control/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_robots/kitech_robots_control/CMakeFiles/_catkin_empty_exported_target.dir/depend
 

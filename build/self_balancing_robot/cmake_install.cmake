@@ -1,8 +1,8 @@
-# Install script for directory: /home/yoseph/ros/Dual-Motion-robot-gazebo/src/self_balancing_robot
+# Install script for directory: /home/drcl_yang/ros/Dual-Motion-robot-gazebo/src/self_balancing_robot
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/yoseph/ros/Dual-Motion-robot-gazebo/install")
+  set(CMAKE_INSTALL_PREFIX "/home/drcl_yang/ros/Dual-Motion-robot-gazebo/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/yoseph/ros/Dual-Motion-robot-gazebo/build/self_balancing_robot/catkin_generated/installspace/self_balancing_robot.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/drcl_yang/ros/Dual-Motion-robot-gazebo/build/self_balancing_robot/catkin_generated/installspace/self_balancing_robot.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/self_balancing_robot/cmake" TYPE FILE FILES
-    "/home/yoseph/ros/Dual-Motion-robot-gazebo/build/self_balancing_robot/catkin_generated/installspace/self_balancing_robotConfig.cmake"
-    "/home/yoseph/ros/Dual-Motion-robot-gazebo/build/self_balancing_robot/catkin_generated/installspace/self_balancing_robotConfig-version.cmake"
+    "/home/drcl_yang/ros/Dual-Motion-robot-gazebo/build/self_balancing_robot/catkin_generated/installspace/self_balancing_robotConfig.cmake"
+    "/home/drcl_yang/ros/Dual-Motion-robot-gazebo/build/self_balancing_robot/catkin_generated/installspace/self_balancing_robotConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/self_balancing_robot" TYPE FILE FILES "/home/yoseph/ros/Dual-Motion-robot-gazebo/src/self_balancing_robot/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/self_balancing_robot" TYPE FILE FILES "/home/drcl_yang/ros/Dual-Motion-robot-gazebo/src/self_balancing_robot/package.xml")
 endif()
 

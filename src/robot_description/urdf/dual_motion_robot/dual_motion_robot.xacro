@@ -13,8 +13,8 @@
       <mass value="118.1" />
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <inertia ixx="6.4387768" ixy="-0.0007626" ixz="-0.7441046"
-                iyy="46.1852065" iyz="-0.0011013"
-                izz="48.0676973" />
+          iyy="46.1852065" iyz="-0.0011013"
+          izz="48.0676973" />
     </inertial>
     <!-- body -->
     <collision name="collision_chassis">
@@ -33,11 +33,10 @@
 
   <link name="wheel_link">
     <!-- pose and inertial -->
-    <pose>0 0 0 0 0 0</pose>
     <inertial>
       <mass value="1"/>
       <origin rpy="0 0 0" xyz="0 0 -0.35"/>
-      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <!-- body -->
     <collision name="collision_wheel_link">
@@ -56,14 +55,15 @@
   </link>
 
   <xacro:link_wheel name="link_right_wheel" />
-  <xacro:joint_wheel name="wheel_R_joint" child="link_right_wheel" origin_xyz="0 0.51 -0.35" origin_rpy="-3.14 0 0" />
-  <xacro:SimpleTransmissionVelocity n="0" joint="wheel_R_joint" />
+  <xacro:joint_wheel name="wheel_R_joint" child="link_right_wheel" origin_xyz="0 0.51 -0.35" origin_rpy="0 0 0" />
+  <xacro:SimpleTransmissionEffort n="0" joint="wheel_R_joint" />
     
   <xacro:link_wheel name="link_left_wheel" />
   <xacro:joint_wheel name="wheel_L_joint" child="link_left_wheel" origin_xyz="0 -0.51 -0.35" origin_rpy="0 0 0" />
-  <xacro:SimpleTransmissionVelocity n="1" joint="wheel_L_joint" />
+  <xacro:SimpleTransmissionEffort n="1" joint="wheel_L_joint" />
 
   <xacro:base_joint name="chassis_pos_joint" child="link_chassis" origin_xyz="0 0 0.0" />
   <xacro:SimpleTransmissionPosition n="2" joint="chassis_pos_joint" />
-  
+
+
 </robot>

@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11 -fPIC
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"kitech_controllers\" -Dkitech_controllers_EXPORTS
 
-CXX_INCLUDES = -I/home/yoseph/ros/Dual-Motion-robot-gazebo/src/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 
+CXX_INCLUDES = -I/home/drcl_yang/ros/Dual-Motion-robot-gazebo/src/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 
 

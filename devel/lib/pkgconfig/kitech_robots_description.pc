@@ -1,4 +1,4 @@
-prefix=/home/yoseph/ros/Dual-Motion-robot-gazebo/devel
+prefix=/home/drcl_yang/ros/Dual-Motion-robot-gazebo/devel
 
 Name: kitech_robots_description
 Description: Description of kitech_robots_description

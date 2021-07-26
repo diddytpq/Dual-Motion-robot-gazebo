@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/yoseph/ros/Dual-Motion-robot-gazebo/src/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers
-# Build directory: /home/yoseph/ros/Dual-Motion-robot-gazebo/build/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers
+# Source directory: /home/drcl_yang/ros/Dual-Motion-robot-gazebo/src/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers
+# Build directory: /home/drcl_yang/ros/Dual-Motion-robot-gazebo/build/kitech_legged_segway_robot_v0.2/kitech_legged_segway_robot/kitech_controllers
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

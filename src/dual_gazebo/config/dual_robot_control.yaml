@@ -12,12 +12,12 @@ dual_motion_robot:
     pid: {p: 100.0, i: 0.01, d: 10.0}
  
   wheel_L_joint_joint_controller:
-    type: velocity_controllers/JointPositionController
+    type: effort_controllers/JointVelocityController
     joint: wheel_L_joint
     pid: {p: 100.0, i: 0.01, d: 10.0}
       
       
   wheel_R_joint_joint_controller:
-    type: velocity_controllers/JointPositionController
+    type: effort_controllers/JointVelocityController
     joint: wheel_R_joint
     pid: {p: 100.0, i: 0.01, d: 10.0}  

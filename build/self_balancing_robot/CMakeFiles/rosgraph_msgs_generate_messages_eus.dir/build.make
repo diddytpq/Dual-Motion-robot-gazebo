@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yoseph/ros/Dual-Motion-robot-gazebo/src
+CMAKE_SOURCE_DIR = /home/drcl_yang/ros/Dual-Motion-robot-gazebo/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yoseph/ros/Dual-Motion-robot-gazebo/build
+CMAKE_BINARY_DIR = /home/drcl_yang/ros/Dual-Motion-robot-gazebo/build
 
 # Utility rule file for rosgraph_msgs_generate_messages_eus.
 
@@ -63,10 +63,10 @@ self_balancing_robot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build: r
 .PHONY : self_balancing_robot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 
 self_balancing_robot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean:
-	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build/self_balancing_robot && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/drcl_yang/ros/Dual-Motion-robot-gazebo/build/self_balancing_robot && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : self_balancing_robot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 
 self_balancing_robot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend:
-	cd /home/yoseph/ros/Dual-Motion-robot-gazebo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yoseph/ros/Dual-Motion-robot-gazebo/src /home/yoseph/ros/Dual-Motion-robot-gazebo/src/self_balancing_robot /home/yoseph/ros/Dual-Motion-robot-gazebo/build /home/yoseph/ros/Dual-Motion-robot-gazebo/build/self_balancing_robot /home/yoseph/ros/Dual-Motion-robot-gazebo/build/self_balancing_robot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/drcl_yang/ros/Dual-Motion-robot-gazebo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/drcl_yang/ros/Dual-Motion-robot-gazebo/src /home/drcl_yang/ros/Dual-Motion-robot-gazebo/src/self_balancing_robot /home/drcl_yang/ros/Dual-Motion-robot-gazebo/build /home/drcl_yang/ros/Dual-Motion-robot-gazebo/build/self_balancing_robot /home/drcl_yang/ros/Dual-Motion-robot-gazebo/build/self_balancing_robot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : self_balancing_robot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
 

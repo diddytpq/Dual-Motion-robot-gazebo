@@ -95,56 +95,33 @@ def mecanum_wheel_velocity(vx, vy, wz):
 def move_mecanum(data):
     # start publisher of cmd_vel to control mecanum
 
+    linear, angular = data
 
     pub_L = rospy.Publisher('/dual_motion_robot/wheel_L_joint_joint_controller/command', Float64, queue_size=10)
     pub_R = rospy.Publisher('/dual_motion_robot/wheel_R_joint_joint_controller/command', Float64, queue_size=10)
 
-    
-    """pub = rospy.Publisher("/mecanum_1_vel", Twist, queue_size=10)
-    pub_wheel_vel_1 = rospy.Publisher("/mecanum_1/wheel_1/command", Float64, queue_size=10)
-    pub_wheel_vel_2 = rospy.Publisher("/mecanum_1/wheel_2/command", Float64, queue_size=10)
-    pub_wheel_vel_3 = rospy.Publisher("/mecanum_1/wheel_3/command", Float64, queue_size=10)
-    pub_wheel_vel_4 = rospy.Publisher("/mecanum_1/wheel_4/command", Float64, queue_size=10)
-    
-    linear = data[0]
-    angular = data[1]
+    pub_L.publish(linear[0])
+    pub_R.publish(linear[0])
 
-    g_get_state = rospy.ServiceProxy("/gazebo/get_model_state", GetModelState)
-
-    robot_state = g_get_state(model_name="dual_robot")
+    print(linear[0])
 
 
-    linear, angular[2] = check_velocity([linear[0],linear[1],linear[2],angular[2]])
-    
-    roll_x, pitch_y, yaw_z = qua2eular(robot_state.pose.orientation.x, robot_state.pose.orientation.y, 
-                            robot_state.pose.orientation.z, robot_state.pose.orientation.w)
-
-    print(np.rad2deg(yaw_z))
+    """pub = rospy.Publisher("/cmd_vel", Twist, queue_size=10)
     twist = Twist()
 
     twist.linear.x = linear[0]
     twist.linear.y = linear[1]
     twist.linear.z = linear[2]
 
+    twist.angular.x = angular[0]
+    twist.angular.y = angular[1]
     twist.angular.z = angular[2]
 
 
-    wheel_vel = mecanum_wheel_velocity(twist.linear.x, twist.linear.y, twist.angular.z)
-    
-    print("-------------------------------------------------------------------------------")
-    rospy.loginfo("\ttwist.linear.x : %f", twist.linear.x)
-    rospy.loginfo("\ttwist.linear.y : %f", twist.linear.y)
-    rospy.loginfo("\ttwist.linear.z : %f", twist.angular.z)
-    
-    # record values to log file and screen
-    #rospy.loginfo("twist.linear.x: %f; twist.linear.y: %f ; angular %f", twist.linear.x, twist.linear.y, twist.angular.z)
+    pub.publish(twist)
 
-    # publish cmd_vel move command to mecanum 
-    #pub.publish(twist)"""
-    data = data[0][0]
-    print(data)
-    pub_L.publish(data)
-    pub_R.publish(data)
+    print(twist)"""
+
 
 
     return [linear[0],linear[1],linear[2]], angular[2]
@@ -179,7 +156,8 @@ if __name__ == '__main__':
 
             if key == 'w' :
 
-                linear[0] += 1 
+                linear[0] += 1
+
                 linear, angular[2] = move_mecanum([linear,angular])
 
             elif key == 'x' :
@@ -188,12 +166,12 @@ if __name__ == '__main__':
 
 
             elif key == 'a' :
-                linear[1] += 1 
+                angular[2] += 1 
                 linear, angular[2] = move_mecanum([linear,angular])
 
 
             elif key == 'd' :
-                linear[1] -= 1 
+                angular[2] -= 1 
                 linear, angular[2] = move_mecanum([linear,angular])
 
             elif key == 'q' :

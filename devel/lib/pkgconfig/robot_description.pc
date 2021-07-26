@@ -1,4 +1,4 @@
-prefix=/home/yoseph/ros/Dual-Motion-robot-gazebo/devel
+prefix=/home/drcl_yang/ros/Dual-Motion-robot-gazebo/devel
 
 Name: robot_description
 Description: Description of robot_description

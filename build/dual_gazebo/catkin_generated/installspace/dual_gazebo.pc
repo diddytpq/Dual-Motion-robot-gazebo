@@ -1,4 +1,4 @@
-prefix=/home/yoseph/ros/Dual-Motion-robot-gazebo/install
+prefix=/home/drcl_yang/ros/Dual-Motion-robot-gazebo/install
 
 Name: dual_gazebo
 Description: Description of dual_gazebo

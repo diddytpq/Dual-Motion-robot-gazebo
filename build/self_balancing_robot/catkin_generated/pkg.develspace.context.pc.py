@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "self_balancing_robot"
-PROJECT_SPACE_DIR = "/home/yoseph/ros/Dual-Motion-robot-gazebo/devel"
+PROJECT_SPACE_DIR = "/home/drcl_yang/ros/Dual-Motion-robot-gazebo/devel"
 PROJECT_VERSION = "0.0.0"
