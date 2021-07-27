@@ -176,13 +176,13 @@ if __name__ == '__main__':
 
             elif key == 'q' :
 
-                plant_x += 0.01 
+                plant_x += 0.1 
                 move_chassis(plant_x)
 
 
             elif key == 'e' :
 
-                plant_x -= 0.01 
+                plant_x -= 0.1 
                 move_chassis(plant_x)
 
 

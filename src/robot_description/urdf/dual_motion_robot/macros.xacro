@@ -32,7 +32,7 @@
         <child link="${child}"/>
         <parent link="wheel_link"/>
         <axis rpy="0 0 0" xyz="0 1 0"/>
-        <limit effort="1" velocity="100"/>
+        <limit effort="1000" velocity="100"/>
         <joint_properties damping="1.0" friction="1.0"/>
       </joint>
     </xacro:macro>
@@ -50,7 +50,8 @@
         <child link="${child}"/>
         <parent link="wheel_link"/>
         <axis rpy="0 0 0" xyz="1 0 0"/>
-        <limit effort="10" lower="-0.35" upper="0.35" velocity="0.1" />
+        <limit effort="10000" lower="-0.35" upper="0.35" velocity="0.1" />
+        <joint_properties damping="1.0" friction="1.0"/>
       </joint>
     </xacro:macro>
     

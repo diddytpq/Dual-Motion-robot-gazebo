@@ -54,16 +54,16 @@
     </visual>
   </link>
 
-  <xacro:link_wheel name="link_right_wheel" />
-  <xacro:joint_wheel name="wheel_R_joint" child="link_right_wheel" origin_xyz="0 0.51 -0.35" origin_rpy="0 0 0" />
-  <xacro:SimpleTransmissionEffort n="0" joint="wheel_R_joint" />
-    
   <xacro:link_wheel name="link_left_wheel" />
-  <xacro:joint_wheel name="wheel_L_joint" child="link_left_wheel" origin_xyz="0 -0.51 -0.35" origin_rpy="0 0 0" />
-  <xacro:SimpleTransmissionEffort n="1" joint="wheel_L_joint" />
+  <xacro:joint_wheel name="wheel_L_joint" child="link_left_wheel" origin_xyz="0 0.51 -0.35" origin_rpy="0 0 0" />
+  <xacro:SimpleTransmissionVelocity n="0" joint="wheel_L_joint" />
+    
+  <xacro:link_wheel name="link_right_wheel" />
+  <xacro:joint_wheel name="wheel_R_joint" child="link_right_wheel" origin_xyz="0 -0.51 -0.35" origin_rpy="0 0 0" />
+  <xacro:SimpleTransmissionVelocity n="1" joint="wheel_R_joint" />
 
   <xacro:base_joint name="chassis_pos_joint" child="link_chassis" origin_xyz="0 0 0.0" />
-  <xacro:SimpleTransmissionPosition n="2" joint="chassis_pos_joint" />
+  <xacro:SimpleTransmissionEffort n="2" joint="chassis_pos_joint" />
 
 
 </robot>
