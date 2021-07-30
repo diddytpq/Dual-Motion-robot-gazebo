@@ -18,9 +18,10 @@
             </collision>
 
             <visual name="${name}_visual">
-              <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+              <origin rpy="0 0 0" xyz="0 0 0"/>
               <geometry>
-                <cylinder length="0.14" radius="0.2"/>
+                <mesh filename="package://robot_description/mesh/for_VREP/Wheel.stl" scale="0.001 0.001 0.001"/>
+                <!--cylinder length="0.14" radius="0.2"/-->
               </geometry>
             </visual>
         </link>
@@ -50,7 +51,7 @@
         <child link="${child}"/>
         <parent link="wheel_link"/>
         <axis rpy="0 0 0" xyz="1 0 0"/>
-        <limit effort="10000" lower="-0.35" upper="0.35" velocity="0.1" />
+        <limit effort="10000" lower="-1" upper="1" velocity="0.01" />
         <joint_properties damping="1.0" friction="1.0"/>
       </joint>
     </xacro:macro>

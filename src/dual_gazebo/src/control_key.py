@@ -100,8 +100,8 @@ def move_mecanum(data):
     pub_L = rospy.Publisher('/dual_motion_robot/wheel_L_joint_joint_controller/command', Float64, queue_size=10)
     pub_R = rospy.Publisher('/dual_motion_robot/wheel_R_joint_joint_controller/command', Float64, queue_size=10)
 
-    pub_L.publish(linear[0])
     pub_R.publish(linear[0])
+    pub_L.publish(linear[0])
 
     print(linear[0])
 
@@ -156,12 +156,12 @@ if __name__ == '__main__':
 
             if key == 'w' :
 
-                linear[0] += 1
+                linear[0] += 5
 
                 linear, angular[2] = move_mecanum([linear,angular])
 
             elif key == 'x' :
-                linear[0] -= 1 
+                linear[0] -= 5 
                 linear, angular[2] = move_mecanum([linear,angular])
 
 
@@ -176,13 +176,13 @@ if __name__ == '__main__':
 
             elif key == 'q' :
 
-                plant_x += 0.1 
+                plant_x += 0.01 
                 move_chassis(plant_x)
 
 
             elif key == 'e' :
 
-                plant_x -= 0.1 
+                plant_x -= 0.01
                 move_chassis(plant_x)
 
 

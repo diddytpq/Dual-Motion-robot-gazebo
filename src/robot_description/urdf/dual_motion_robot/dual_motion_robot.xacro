@@ -10,7 +10,8 @@
   <link name="link_chassis">
     <!-- pose and inertial -->
     <inertial>
-      <mass value="118.1" />
+      <mass value="1" />
+      <!--mass value="118.1" /-->
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <inertia ixx="6.4387768" ixy="-0.0007626" ixz="-0.7441046"
           iyy="46.1852065" iyz="-0.0011013"
@@ -25,7 +26,8 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <box size="2.2 0.8 0.7"/>
+        <mesh filename="package://robot_description/mesh/for_VREP/Body_with_wheel_plate.stl" scale="0.001 0.001 0.001"/>
+        <!--box size="2.2 0.8 0.7"/-->
       </geometry>
       <material name="blue"/>
     </visual>
